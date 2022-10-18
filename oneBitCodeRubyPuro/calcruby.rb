@@ -13,7 +13,7 @@ loop do
 
     option = gets.chomp.to_i
 
-    if option in optionlist
+    if optionlist.include?(option)
         
         puts "Digite o primeiro valor: "
         first_number = gets.to_i
@@ -41,7 +41,7 @@ loop do
         break
     
     else
-        puts "Opção invalida"
+        result = "Opção Invalida"
     end
 
     system "clear"
