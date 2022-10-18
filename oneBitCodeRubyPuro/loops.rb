@@ -13,3 +13,17 @@ while x < 10
     puts x
     x += 1
 end
+
+#loopdo
+
+contador = 1
+
+loop do
+    puts contador
+    break if contador == 10
+    contador += 1
+end
+
+10.times do
+    puts "Olá"
+end
