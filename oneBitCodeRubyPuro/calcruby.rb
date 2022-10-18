@@ -2,7 +2,7 @@ result = ''
 operation = ''
 
 loop do
-    puts "O resultado da operação de #{operation} é #{result}" if result != ''
+    puts "O resultado da operação de #{operation} é #{result}" if result != '' #Evita pritar a mensagem quando result está vazio
     puts 'Selecione uma das seguintes opções:'
     puts '1- Soma'
     puts '2- Subtração'
@@ -34,6 +34,12 @@ loop do
                 result = first_number / second_number
                 operation = 'Divisão'  
         end
+    
+    elsif option == 0
+        break
+    
+    else
+        puts "Opção invalida"
 
     end
 end
