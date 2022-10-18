@@ -1,12 +1,13 @@
 result = ''
+operation = ''
 
 loop do
-    puts result
+    puts "O resultado da operação de #{operation} é #{result}" if result != ''
     puts 'Selecione uma das seguintes opções:'
-    puts '1- Somar'
-    puts '2- Subtrair'
-    puts '3- Multiplicar'
-    puts '4- Dividir'
+    puts '1- Soma'
+    puts '2- Subtração'
+    puts '3- Multiplicação'
+    puts '4- Divisão'
     puts '0- Sair'
 
     option = gets.chomp.to_i
@@ -22,11 +23,16 @@ loop do
         case option
             when 1
                 result = first_number + second_number
-                puts "O resultado da soma de #{first_number} e #{second_number} é #{result}"
+                operation = 'Soma'
             when 2
                 result = first_number - second_number
-                puts "O resultado da subtração #{first_number} - #{second_number} é #{result}"
-
+                operation = 'Subtração'
+            when 3
+                result = first_number * second_number
+                operation = 'Multiplicação'
+            when 4
+                result = first_number / second_number
+                operation = 'Divisão'  
         end
 
     end
