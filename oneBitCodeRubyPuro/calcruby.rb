@@ -1,5 +1,6 @@
 result = ''
 operation = ''
+optionlist = [1, 2, 3, 4]
 
 loop do
     puts "O resultado da operação de #{operation} é #{result}" if result != '' #Evita pritar a mensagem quando result está vazio
@@ -12,7 +13,7 @@ loop do
 
     option = gets.chomp.to_i
 
-    if option == 1 .. 4
+    if option in optionlist
         
         puts "Digite o primeiro valor: "
         first_number = gets.to_i
@@ -41,7 +42,7 @@ loop do
     
     else
         puts "Opção invalida"
-
     end
+
     system "clear"
 end
