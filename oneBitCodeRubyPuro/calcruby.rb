@@ -12,7 +12,7 @@ loop do
 
     option = gets.chomp.to_i
 
-    if option == 1 || 2 || 3 || 4
+    if option == 1 .. 4
         
         puts "Digite o primeiro valor: "
         first_number = gets.to_i
@@ -36,6 +36,7 @@ loop do
         end
     
     elsif option == 0
+        puts "Encerrando programa"
         break
     
     else
