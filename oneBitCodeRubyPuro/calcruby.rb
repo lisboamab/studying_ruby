@@ -42,4 +42,5 @@ loop do
         puts "Opção invalida"
 
     end
+    system "clear"
 end
