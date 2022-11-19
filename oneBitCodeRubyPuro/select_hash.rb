@@ -8,3 +8,8 @@ end
 
 puts selection_key
 
+selection_value = hash.select do |key, value|
+    value == 'um' || value == 'tres'
+end
+
+puts selection_value
