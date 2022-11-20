@@ -2,15 +2,15 @@
 
 ### Basics commands
 
-`gem install <gem-name>`
-`gem uninstall <gem-name>`
-`gem list`
+`gem install <gem-name>`\
+`gem uninstall <gem-name>`\
+`gem list`\
 `gem install bundler`
 
 ### Gemfile
 
-`source <gem host>`
-`gem 'mygem'`
+`source <gem host>`\
+`gem 'mygem'`\
 ...
 
 ### `bundler`
