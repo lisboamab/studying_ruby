@@ -12,21 +12,14 @@ end
 
 class Func < User
   @@func_array = ['João', 'Marcos', 'Lais', 'Jorge']
+
   def check_func(name)
     @name = name
-    if isFunc?
+    if @@func_array.include?(@name)
       puts "#{@name} é um funcionario"
     else
     puts "#{@name} não é um funcionario"
    end
-  end
-
-  def isFunc?
-    if @@func_array.include?(@name)
-      return true
-    else
-      return false
-    end
   end
 end
 
