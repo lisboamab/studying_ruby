@@ -3,4 +3,3 @@ class Cachorro < Animal
     puts 'Au Au'
   end
 end
-
