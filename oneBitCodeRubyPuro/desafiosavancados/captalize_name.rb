@@ -1,3 +1,4 @@
+#capitalize é um metodo para strings que retorna a string passada com a primeira letra como maiuscula
 capName = -> (name){puts name.capitalize}
 
 def capitalize_name(capName)
@@ -8,4 +9,3 @@ def capitalize_name(capName)
 end
 
 capitalize_name(capName)
-
