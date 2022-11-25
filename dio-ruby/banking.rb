@@ -12,6 +12,8 @@ class Banking
       @bank_balance -= value
       account.bank_balance += value
       puts "Você transferiu R$#{value} para #{account.name}"
+      puts "Seu saldo restante é #{@bank_balance}"
+      puts "O saldo de #{account.name} é de #{account.bank_balance}"
     else
       puts "Operação Invalida: Saldo indiponivel"
     end
@@ -25,9 +27,4 @@ class Banking
     end
   end
 end
-
-conta1 = Banking.new("Marcos", 200)
-conta2 = Banking.new("Lais", 300)
-
-conta1.transfer(conta2, 150)
 
